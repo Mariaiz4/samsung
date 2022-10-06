@@ -1,0 +1,488 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+html {
+  font-size: 1.6rem;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #000000 0%, #9DCDB7 13.02%, #F2F1EF 22.4%, #F1D4F3 40.63%, #FABB85 52.84%, #C3272F 76.04%, #465678 90.62%, #000000 100%);
+  overflow-x: hidden;
+  text-align: center;
+  position: relative;
+}
+
+@font-face {
+  font-family: caviar;
+  src: url(../assets/caviar_dreams/CaviarDreams.ttf);
+}
+header {
+  display: flex;
+  padding-top: 3.4rem;
+  padding-left: 1rem;
+  justify-content: space-between;
+  padding-right: 1rem;
+}
+header ul {
+  display: none;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  text-align: left;
+}
+main h1 {
+  font-family: "caviar";
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 8.1rem;
+  color: white;
+  margin-top: 12.6rem;
+  margin-bottom: 13.2rem;
+  width: 30%;
+}
+main .arco {
+  width: 18rem;
+  height: 30rem;
+  background: url(../assets/arco_mobile.svg);
+  background-repeat: no-repeat;
+  position: relative;
+}
+main .arco img {
+  width: 7rem;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.circulos {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  font-family: caviar;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: left;
+  margin-top: 4rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  color: #313A49;
+}
+
+span {
+  font-family: "caviar";
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: left;
+  display: flex;
+  margin-left: 5.4rem;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #303748;
+  margin-bottom: 4.2rem;
+  text-align: left;
+  margin-top: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.Bateria img {
+  width: 17rem;
+  height: 18rem;
+  border-bottom: 6.3rem;
+}
+.Bateria h2, .Bateria p {
+  color: white;
+}
+
+.design img {
+  width: 26rem;
+  height: 18rem;
+  border-bottom: 6.3rem;
+}
+
+.camera img {
+  width: 26rem;
+  height: 18rem;
+  border-bottom: 6.3rem;
+}
+
+.memoria img {
+  width: 25rem;
+  height: 19rem;
+  border-bottom: 6.3rem;
+}
+
+.final button {
+  text-align: center;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.6rem;
+  margin-bottom: 4rem;
+}
+.final img {
+  width: 26rem;
+  height: 18rem;
+  border-bottom: 6.3rem;
+}
+.final p {
+  color: white;
+  margin-top: 4rem;
+}
+
+.celular img {
+  width: 26rem;
+  height: 18rem;
+  border-bottom: 6.3rem;
+}
+.celular h2 {
+  color: white;
+}
+.celular p {
+  color: white;
+}
+
+@media (min-width: 800px) {
+  header {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  header .menu {
+    display: none;
+  }
+  header ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    list-style: none;
+  }
+  header ul li {
+    font-family: Caviar;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-align: left;
+  }
+  header ul a {
+    text-decoration: none;
+    color: white;
+  }
+  section {
+    display: flex;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 10rem;
+  }
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    margin-bottom: 10rem;
+    margin-top: 7rem;
+  }
+  main .arco {
+    width: 40rem;
+    height: 47rem;
+    background: url(../assets/arco.svg);
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  main .arco img {
+    width: 15rem;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+  main h1 {
+    font-family: Caviar;
+    font-size: 12rem;
+    font-weight: 700;
+    line-height: 15.2rem;
+    text-align: left;
+    margin-right: 6rem;
+  }
+  .circulos {
+    display: flex;
+    margin-bottom: 2.1rem;
+  }
+  .Bateria {
+    display: flex;
+    align-items: center;
+  }
+  .Bateria img {
+    width: 30rem;
+    height: 30.5rem;
+  }
+  .Bateria h2 {
+    color: white;
+  }
+  .design {
+    align-items: center;
+  }
+  .design img {
+    height: 26.9rem;
+    width: 38.3rem;
+    left: 47.4rem;
+    top: 72.9rem;
+  }
+  .camera {
+    margin-top: 10rem;
+  }
+  .camera img {
+    width: 40rem;
+    height: 30rem;
+  }
+  .memoria {
+    margin-bottom: 15rem;
+    align-items: center;
+  }
+  .memoria img {
+    width: 40rem;
+    height: 30rem;
+  }
+  .celular {
+    display: block;
+  }
+  .celular img {
+    height: 30rem;
+    width: 75.5rem;
+    top: 28.38rem;
+  }
+  .celular h2 {
+    color: white;
+  }
+  .final {
+    display: block;
+  }
+  .final img {
+    width: 40rem;
+    height: 30rem;
+  }
+  .final .btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2.5rem;
+  }
+  p {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3rem;
+    text-align: left;
+  }
+  h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 5.1rem;
+    color: #313A49;
+  }
+  span {
+    display: flex;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    text-align: left;
+    color: #313A49;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+@media (min-width: 1440px) {
+  header {
+    margin-left: 7rem;
+    margin-right: 6rem;
+    margin-top: 3rem;
+    margin-bottom: 4.7rem;
+  }
+  header .samsung {
+    height: 3.1rem;
+    width: 20.4rem;
+    left: 7.4rem;
+  }
+  header .menu {
+    display: none;
+  }
+  header ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  header ul li {
+    list-style: none;
+    font-family: caviar;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+  header ul a {
+    text-decoration: none;
+    color: white;
+  }
+  .circulos {
+    margin-bottom: 4.7rem;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15rem;
+  }
+  main .arco {
+    width: 63.3rem;
+    height: 84.3rem;
+    background: url(../assets/arcodesk.png);
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  main .arco img {
+    width: 35.1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8.4rem;
+  }
+  main h1 {
+    height: 27.7rem;
+    width: 42.3rem;
+    font-size: 20rem;
+    line-height: 23.2rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+  .design {
+    margin-bottom: 15rem;
+  }
+  .design img {
+    height: 45.7rem;
+    width: 73.6rem;
+    left: 62rem;
+    top: 14.23rem;
+  }
+  .camera {
+    margin-bottom: 15rem;
+  }
+  .camera img {
+    height: 62.5rem;
+    width: 98.7rem;
+    left: 33.2rem;
+    top: 24.51rem;
+  }
+  .camera p {
+    position: absolute;
+    width: 683.93px;
+    height: 226px;
+  }
+  .memoria {
+    margin-bottom: 15rem;
+  }
+  .memoria img {
+    height: 66.4rem;
+    width: 98rem;
+    left: 34.6rem;
+    top: 35.32rem;
+  }
+  .Bateria {
+    margin-bottom: 15rem;
+  }
+  .Bateria img {
+    height: 83.9rem;
+    width: 85.6rem;
+    left: 48.3rem;
+    top: 44.28rem;
+  }
+  .Bateria p {
+    color: #313A49;
+  }
+  .celular {
+    margin-bottom: 15rem;
+  }
+  .celular h2 {
+    color: white;
+  }
+  .celular p {
+    margin-bottom: 0;
+  }
+  .celular img {
+    height: 742px;
+    width: 1431.0559082031px;
+    left: 0px;
+    top: 5453.5px;
+    border-radius: 0px;
+  }
+  .final {
+    margin-bottom: 15rem;
+  }
+  .final img {
+    height: 591px;
+    width: 74.6rem;
+    left: 59.9rem;
+    top: 66.68rem;
+  }
+  .final button {
+    font-size: 3.5rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 3.7rem;
+    text-align: left;
+  }
+  p {
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 4.8rem;
+    text-align: left;
+    color: #313A49;
+  }
+  h2 {
+    margin-bottom: 3.5rem;
+    color: #313A49;
+    font-size: 6.4rem;
+    font-weight: 700;
+    line-height: 8.1rem;
+    text-align: left;
+  }
+  span {
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 4.2rem;
+    text-align: left;
+    color: #32374E;
+    margin-bottom: 3rem;
+  }
+  span .bnt button {
+    font-family: Poppins;
+    font-size: 3.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 5.4rem;
+    text-align: left;
+  }
+}/*# sourceMappingURL=main.css.map */
